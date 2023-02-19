@@ -3,27 +3,6 @@ document.addEventListener("click", (e) => {
     mainButton();
   }
 });
-const container = () => {
-  fetch("http://www.boredapi.com/api/activity/")
-    .then((res) => res.json())
-    .then((data) => {
-      document.querySelector(".main-container").innerHTML = `
-          <div class="tip-container">
-          <div class="tip-box">
-            <p>
-             ${data.activity}
-            </p>
-          </div>
-        </div>
-        <button id="buttonTwo">Get New Advice</button>
-          `;
-      document
-        .getElementById("buttonTwo")
-        .addEventListener("click", function () {
-          return container();
-        });
-    });
-};
 
 const mainButton = () => {
   document.querySelector(
@@ -32,5 +11,27 @@ const mainButton = () => {
     <source src="./assets/img/bgg.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>`;
-  container();
+  document.querySelector(".tip-container").classList.remove("d-none");
+  document.getElementById("buttonTwo").classList.remove("d-none");
+  document.querySelector(".contentOne").classList.add("d-none");
+  newAdvice();
 };
+
+const newAdvice = () => {
+  fetch("http://www.boredapi.com/api/activity/")
+    .then((res) => res.json())
+    .then((data) => {
+      document.querySelector(".tip-container").innerHTML = `
+      
+    <div class="tip-box">
+    <p>${data.activity}</p>
+  </div>
+    
+    
+      `;
+    });
+};
+
+document.getElementById("buttonTwo").addEventListener("click", function () {
+  return newAdvice();
+});
