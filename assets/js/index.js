@@ -19,7 +19,9 @@ const container = () => {
           `;
       document
         .getElementById("buttonTwo")
-        .addEventListener("click", () => container());
+        .addEventListener("click", function () {
+          return container();
+        });
     });
 };
 
