@@ -1,30 +1,8 @@
-//huseyinkaplan
-
 document.addEventListener("click", (e) => {
   if (e.target.id === "main-buttton") {
     mainButton();
   }
 });
-
-const container = () => {
-  fetch("http://www.boredapi.com/api/activity/")
-    .then((res) => res.json())
-    .then((data) => {
-      document.querySelector(".main-container").innerHTML = `
-          <div class="tip-container">
-          <div class="tip-box">
-            <p>
-             ${data.activity}
-            </p>
-          </div>
-        </div>
-        <button id="buttonTwo">Get New Advice</button>
-          `;
-      document
-        .getElementById("buttonTwo")
-        .addEventListener("click", () => container());
-    });
-};
 
 const mainButton = () => {
   document.querySelector(
@@ -34,4 +12,24 @@ const mainButton = () => {
     Your browser does not support HTML5 video.
   </video>`;
   container();
+};
+
+const container = () => {
+  fetch("http://www.boredapi.com/api/activity/")
+    .then((res) => res.json())
+    .then((data) => {
+      document.querySelector(".main-container").innerHTML = `
+        <div class="tip-container">
+        <div class="tip-box">
+          <p>
+           ${data.activity}
+          </p>
+        </div>
+      </div>
+      <button id="buttonTwo">Get New Advice</button>
+        `;
+      document
+        .getElementById("buttonTwo")
+        .addEventListener("click", () => container());
+    });
 };
