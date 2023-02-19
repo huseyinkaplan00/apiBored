@@ -18,7 +18,7 @@ const mainButton = () => {
 };
 
 const newAdvice = () => {
-  fetch("http://www.boredapi.com/api/activity/")
+  fetch("https://apis.scrimba.com/bored/api/activity")
     .then((res) => res.json())
     .then((data) => {
       document.querySelector(".mainText").textContent = `
