@@ -1,3 +1,5 @@
+//huseyinkaplan
+
 document.addEventListener("click", (e) => {
   if (e.target.id === "main-buttton") {
     mainButton();
