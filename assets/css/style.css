@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gloock", serif;
+}
+
+.video .bgVideo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 77%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+.container .box {
+  position: relative;
+  background-color: rgba(16, 18, 27, 0.84);
+  height: 80vh;
+  border-radius: 14px;
+  font-size: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .container .box {
+    height: 76vh;
+  }
+}
+@media (min-width: 968px) {
+  .container .box {
+    height: 80vh;
+  }
+}
+.container .box header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-bg);
+  height: 150px;
+  border-bottom: 5px solid rgba(239, 177, 177, 0.2196078431);
+  margin-bottom: 2em;
+  box-shadow: 25px -5px 17px 5px rgb(0, 0, 0);
+}
+.container .box header a {
+  transition: 0.4s all;
+  font-size: 1.5rem;
+  padding: 60.5px 10px;
+  color: rgba(255, 255, 255, 0.599);
+  letter-spacing: -1px;
+  display: block;
+  border-bottom: 3.9px solid transparent;
+}
+.container .box header a:hover {
+  border-bottom: 3.9px solid #fff;
+  color: white;
+}
+@media (min-width: 768px) {
+  .container .box header a {
+    font-size: 3rem;
+    padding: 46px 10px;
+    border-bottom: 4.5px solid transparent;
+  }
+  .container .box header a:hover {
+    border-bottom: 4.5px solid #fff;
+    color: white;
+  }
+}
+.container .box main .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .box main .main-container .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 200px) {
+  .container .box main .main-container .images .imageOdd {
+    display: none;
+  }
+  .container .box main .main-container .images .imageEven {
+    width: 100% !important;
+    height: 73% !important;
+  }
+}
+@media (max-width: 480px) {
+  .container .box main .main-container .images {
+    height: 140px;
+  }
+}
+.container .box main .main-container .images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  transition: 0.4s;
+  filter: grayscale(100%);
+}
+.container .box main .main-container .images img:nth-child(odd) {
+  width: 23%;
+  max-height: 230px;
+}
+.container .box main .main-container .images img:nth-child(even) {
+  width: 40%;
+  margin: -5px;
+  z-index: 999;
+}
+.container .box main .main-container .images img:hover {
+  filter: none;
+}
+@media (max-width: 530px) {
+  .container .box main .main-container .images img {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .container .box main .main-container .images img:nth-child(odd) {
+    width: 30%;
+    height: 60%;
+  }
+  .container .box main .main-container .images img:nth-child(even) {
+    height: 100%;
+    width: 40%;
+  }
+}
+.container .box main .main-container .parag {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  background: rgba(255, 255, 255, 0.2784313725);
+  padding: 21px 22px;
+  text-shadow: 0px 1px 3px rgba(255, 227, 227, 0.7098039216);
+}
+@media (max-width: 480px) {
+  .container .box main .main-container .parag {
+    padding: 9px 22px;
+    font-size: 1.2rem;
+  }
+}
+.container .box main .main-container .tip-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.container .box main .main-container .tip-container .tip-box {
+  transition: 0.4s;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 30px 0;
+  padding: 10px;
+  background-color: rgba(151, 153, 170, 0.6392156863);
+  background-image: url(https://www.transparenttextures.com/patterns/brushed-alum.png), linear-gradient(326deg, #2b2e3d 0%, rgba(185, 189, 192, 0.6705882353) 100%);
+}
+.container .box main .main-container .tip-container .tip-box p {
+  color: white;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .container .box main .main-container .tip-container .tip-box {
+    margin: 0 30px 20px;
+    border-radius: 10px;
+  }
+}
+.container .box main .main-container button {
+  font-size: 1em;
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgba(42, 39, 39, 0.8392156863) 0%, #ccd1d4 51%, #3f3435 100%);
+  border: none;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  width: 100%;
+  background-size: 200% auto;
+  color: rgb(3, 3, 3);
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.8588235294);
+  display: block;
+  font-weight: 500;
+}
+@media (max-width: 350px) {
+  .container .box main .main-container button {
+    margin: 6px;
+    padding: 13px 24px;
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 768px) {
+  .container .box main .main-container button {
+    border-radius: 10px;
+    width: 220px;
+  }
+}
+.container .box main .main-container button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+:root {
+  --bg-color: rgba(16 18 27 / 40%);
+  --content-bg: rgb(146 151 179 / 13%);
+  --hover: rgb(42 46 60);
+  --header-bg: #14162bb7;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button,
+a {
+  font-family: "Gloock", serif;
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
