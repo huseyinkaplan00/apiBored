@@ -21,13 +21,10 @@ const newAdvice = () => {
   fetch("http://www.boredapi.com/api/activity/")
     .then((res) => res.json())
     .then((data) => {
-      document.querySelector(".tip-container").innerHTML = `
+      document.querySelector(".mainText").textContent = `
       
-    <div class="tip-box">
-    <p>${data.activity}</p>
-  </div>
-    
-    
+    ${data.activity}
+  
       `;
     });
 };
