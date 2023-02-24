@@ -19,7 +19,7 @@ Get rid of boredom with bored app! <br/> Being Bored Is Really Annoying If You W
 - CSS pre-processor sass 
 - Vanilla JavaScript
 - Flexbox
-- <a href="https://www.thecolorapi.com/"> The Color Api  </a>
+- <a href="https://www.boredapi.com/"> The Bored API  </a>
 
 ## Links
 🌍Live at : https://huseyinkaplan00.github.io/apiBored/
