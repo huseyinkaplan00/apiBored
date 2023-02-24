@@ -10,7 +10,7 @@
 Get rid of boredom with bored app! <br/> Being Bored Is Really Annoying If You Want To Get Out Of This Situation Right Away Press The Button.
 ## Screenshot
 
-<img style="width:50%" src="https://raw.githubusercontent.com/huseyinkaplan00/ColorSchemeGenerator/main/assets/img/Screenshot.png"/>
+<img href="#" style="width:50%" src="https://raw.githubusercontent.com/huseyinkaplan00/apiBored/main/assets/img/Screenshot_2.png">
 
 
 ## Built with
