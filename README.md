@@ -1,24 +1,27 @@
 # Table of contents
 
-  - [Description](#Description)
+  - [Description](#description)
   - [Screenshots](#screenshot)
   - [Built with](#built-with) 
   - [Links](#links)
 
 ## Description
-Get rid of boredom with bored app! <br>
-Being Bored Is Really Annoying If You Want To Get Out Of This Situation Right Away Press The Button.  
 
+Choose the color you want, and easily copy any color palette you want <br />
+Color Scheme Generator App offers you 5 color options specific to the color you want.
 ## Screenshot
-
-<img style="width:50%" src="https://github.com/huseyinkaplan00/apiBored/blob/main/assets/img/Screenshot_2.png?raw=true"/>
+<h3>Desktop Version of App</h3>
+<img style="width:50%" src="https://raw.githubusercontent.com/huseyinkaplan00/ColorSchemeGenerator/main/assets/img/Screenshot.png"/>
+<h3>Mobile Version of App</h3>
+<img style="width:50%;" src="https://raw.githubusercontent.com/huseyinkaplan00/ColorSchemeGenerator/main/assets/img/mobileScreenshoot.png"/>
 
 ## Built with
+- Fully Responsive, Mobile-first workflow
 - Semantic HTML5 markup
 - CSS pre-processor sass 
 - Vanilla JavaScript
 - Flexbox
-- <a href="https://www.boredapi.com/"> Bored Api  </a>
+- <a href="https://www.thecolorapi.com/"> The Color Api  </a>
 
 ## Links
-🌍Live at : https://huseyinkaplan00.github.io/apiBored/
+🌍Live at : https://huseyinkaplan00.github.io/ColorSchemeGenerator/
