@@ -9,10 +9,9 @@
 
 Get rid of boredom with bored app! <br/> Being Bored Is Really Annoying If You Want To Get Out Of This Situation Right Away Press The Button.
 ## Screenshot
-<h3>Desktop Version of App</h3>
+
 <img style="width:50%" src="https://raw.githubusercontent.com/huseyinkaplan00/ColorSchemeGenerator/main/assets/img/Screenshot.png"/>
-<h3>Mobile Version of App</h3>
-<img style="width:50%;" src="https://raw.githubusercontent.com/huseyinkaplan00/ColorSchemeGenerator/main/assets/img/mobileScreenshoot.png"/>
+
 
 ## Built with
 - Fully Responsive, Mobile-first workflow
