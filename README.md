@@ -22,4 +22,4 @@ Get rid of boredom with bored app! <br/> Being Bored Is Really Annoying If You W
 - <a href="https://www.thecolorapi.com/"> The Color Api  </a>
 
 ## Links
-🌍Live at : https://huseyinkaplan00.github.io/ColorSchemeGenerator/
+🌍Live at : https://huseyinkaplan00.github.io/apiBored/
